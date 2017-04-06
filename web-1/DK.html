@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<title>Trang đăng ký thành viên</title>
+<head></head>
+<body>
+<form>
+	<label for="nhap thong tin">Mời bạn nhập họ tên của mình:</label>
+	<input type="text" name="nhap thong tin" placeholder="VD:Nguyen Van A"></input>
+	<label for="gioi tinh">Giới tính của bạn:</label>
+	<input type="radio" name="gioi tinh" value="nam">Nam</input>
+	<input type="radio" name="gioi tinh" value="nữ">Nữ</input>
+	<input type="radio" name="gioi tinh" value="không xác định">Không xác định</input>
+	<br/>
+	<label for="nhap mat khau">Mời bạn nhập mật khẩu:</label>
+	<input type="password" name="nhap mat khau"></input>
+	<br/>
+	<label for="nhap mat khau">Mời bạn xác nhận mật khẩu:</label>
+	<input type="password" name="nhap mat khau"></input>
+	<br/>
+	<label>mời bạn chọn câu hỏi bảo mật</label>
+	<input id="cau hoi bao mat" type="text" value="chọn câu hỏi bảo mật" list="question"/>
+		<datalist id="question">
+		<option value="bạn ở đâu?">
+		<option value="Bạn có bị óc chó ko?">
+		<option value="Bạn đã dậy thì chưa?">
+		<option value="Bạn có hay feed ko?">
+		<option value="Bạn có hay bị đồng đội chửi óc chó ko?">
+		</datalist>
+		<br/>
+	<button type="submit" value="submit" onclick="alert('Bạn đã đăng ký thành công!')">Đăng ký</button>
