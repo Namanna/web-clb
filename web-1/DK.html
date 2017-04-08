@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<meta charset="UTF-8"/>
+<link rel="stylesheet" style="text.css" href="DK.css"/>
 <title>Trang đăng ký thành viên</title>
-<head></head>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
+<h1>Đăng ký thành viên mới nhóm: Sờ cai</h1>
 <form>
-	<label for="nhap thong tin">Mời bạn nhập họ tên của mình:</label>
-	<input type="text" name="nhap thong tin" placeholder="VD:Nguyen Van A"></input>
-	<label for="gioi tinh">Giới tính của bạn:</label>
+	<label id="p" for="nhap thong tin">Mời bạn nhập họ tên của mình:</label><br/>
+	<input type="text" name="nhap thong tin" placeholder="VD:Nguyen Van A"></input><br/>
+	<label class="d" for="gioi tinh">Giới tính của bạn:</label><br/>
 	<input type="radio" name="gioi tinh" value="nam">Nam</input>
 	<input type="radio" name="gioi tinh" value="nữ">Nữ</input>
 	<input type="radio" name="gioi tinh" value="không xác định">Không xác định</input>
 	<br/>
-	<label for="nhap mat khau">Mời bạn nhập mật khẩu:</label>
+	<label for="nhap mat khau">Mời bạn nhập mật khẩu:</label><br/>
 	<input type="password" name="nhap mat khau"></input>
 	<br/>
-	<label for="nhap mat khau">Mời bạn xác nhận mật khẩu:</label>
+	<label for="nhap mat khau">Mời bạn xác nhận mật khẩu:</label><br/>
 	<input type="password" name="nhap mat khau"></input>
 	<br/>
-	<label>mời bạn chọn câu hỏi bảo mật</label>
-	<input id="cau hoi bao mat" type="text" value="chọn câu hỏi bảo mật" list="question"/>
+	<label>Mời bạn chọn câu hỏi bảo mật:</label><br/>
+	<input id="cau hoi bao mat" type="text" placeholder="chọn câu hỏi bảo mật" list="question"/>
 		<datalist id="question">
 		<option value="bạn ở đâu?">
 		<option value="Bạn có bị óc chó ko?">
@@ -27,4 +31,6 @@
 		<option value="Bạn có hay bị đồng đội chửi óc chó ko?">
 		</datalist>
 		<br/>
+	<label for="TL cau hoi bao mat">Câu trả lời của bạn:</label><br/>
+	<input type="text" name="TL cau hoi bao mat"></input><br/>
 	<button type="submit" value="submit" onclick="alert('Bạn đã đăng ký thành công!')">Đăng ký</button>
